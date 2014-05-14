@@ -1,0 +1,18 @@
+/*/////////////////////////////////////////////////////////////////////////*/
+//////////////////CMS CREATO INTERAMENTE DA ZAMBAHACKER////////////////////
+//////////////////SCRITTO IN PHP 5 OOP////////////////////////////////////
+/////////////////E' VIETATA LA COPIA/////////////////////////////////////
+//////////////////O LA QUALSIASI VIOLAZIONE DI COPYRIGHT////////////////
+/*////////////////////////////////////////////////////////////////////*/
+
+FILE LEGGIMI.
+
+ISTRUZIONI PER LA CONFIGURAZIONE:
+
+IMPORTARE IL DATABASE  db.sql NEL PROPRIO MYSQL
+CONFIGURARE IL FILE config.classe.php NELLA CARTELLA classi
+CONFIGURARE LA TABELLA sito NEL DATABASE
+CONFIGURARE LA TABELLA permissions_cms NEL DATABASE
+CONFIGURARE IL FILE gioca.php
+
+ALL'INTERNO DEL CMS C'è ANCHE L'EMULATORE PHOENIX

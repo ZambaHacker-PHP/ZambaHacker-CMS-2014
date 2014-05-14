@@ -1,0 +1,78 @@
+<header>
+    <nav><section class="logo"></section><ul>
+            <a href="/home.php">
+                
+                    {% if home.utente.username == home.usr.username%}
+                    {% if pagina == 'home'%}
+                    <li data-subnav="home" style="background: url({{ root }}/images/menu/{{ home.usr.colore }}/menu_arrow.png) center 44px no-repeat;" >
+                    
+                    {%else%}
+                    
+                    <li data-subnav="home">
+                    
+                    {%endif%}
+                    Bacheca	di {{ home.utente.username }}
+                    </li>
+                    {% else %}
+                    
+                    <li data-subnav="home">
+                    Torna alla tua bacheca
+                    </li>
+                    
+                    {% endif %}
+                   
+            </a>
+
+            <aside class="circle">●</aside>
+            <a href="/impostazioni.php">
+                <li data-subnav="team">
+                    Impostazioni</li>
+            </a>
+            <aside class="circle">●</aside>
+            <a href="/staff.php">
+                 {% if pagina == 'staff'%}
+                    <li data-subnav="staff" style="background: url({{ root }}/images/menu/{{ staff.colore }}/menu_arrow.png) center 44px no-repeat;" >
+                    
+                    {%else%}
+                    
+                    <li data-subnav="staff">
+                    
+                    {%endif%}
+                    
+                    Staff </li>
+            </a>
+            
+               
+            
+            <aside class="circle">●</aside>
+            <a href="/news.php">
+                 {% if pagina == 'news'%}
+                    <li data-subnav="news" style="background: url({{ root }}/images/menu/{{ news.colore }}/menu_arrow.png) center 44px no-repeat;" >
+                    
+                    {%else%}
+                    
+                    <li data-subnav="news">
+                    
+                    {%endif%}
+                    
+                    News </li>
+            </a>
+
+            <aside class="circle">●</aside>
+            <a href="/esci.php">
+                <li data-subnav="guides">
+                    Esci</li>
+            </a>
+
+            {% if permessi.hk == 1 %}
+            <aside class="circle">●</aside>
+            <a href="/admin/">
+                <li data-subnav="guides">
+                    Amministrazione</li>
+            </a>
+            {% endif %}
+
+        </ul></nav>
+    <section id="scritte"><marquee id="tweet" onmouseover="stop()" onmouseout="start()">{{ mex_top }}</marquee></section>
+    <section id="online"><section class="testo">{{ online }} JaBBini in linea</section></section>
+</header>

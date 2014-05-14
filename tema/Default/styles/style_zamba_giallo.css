@@ -1,0 +1,897 @@
+﻿   /**
+     *
+     *	CMS BY ZAMBAHACKER
+     *	CSS BY ZAMBAHACKER
+     *
+    **/
+
+html{
+    height: 100%;
+}
+
+body{
+    background: url(../images/bg.png) fixed;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    margin: 0;
+    height: 100%;
+    font-variant: small-caps;
+}
+
+body article#pagina{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    margin: auto;
+    width: 1000px;
+}
+
+body article#pagina section#top{
+    min-height: 100%;
+    height : auto!important;
+    margin: auto auto -96px auto;
+}
+
+a {
+    color: #E69B11;
+}
+
+/*INIZIO HEADER*/
+
+article#pagina section#top header{
+    padding-bottom: 40px;
+}
+
+article#pagina section#top header nav
+{
+    background: url(../images/menu/giallo/menu_bg.png) no-repeat;
+    width: 1000px;
+    height: 54px;
+}
+
+article#pagina section#top header nav ul
+{
+    width: 833px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+article#pagina section#top header nav ul a
+{
+    text-decoration: none;
+    color: white;
+}
+
+article#pagina section#top header nav ul a li
+{
+    height: 24px;
+    padding: 15px 0;
+    margin: 0 10px;
+    float: left;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+article#pagina section#top header nav ul aside.circle
+{
+    float: left;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    margin: 0;
+    padding: 0;
+    margin: 0 5px;
+    padding: 15px 0;
+}
+
+article#pagina section#top header nav ul a li:hover
+{
+    background: url(../images/menu/giallo/menu_arrow.png) center 44px no-repeat;
+}
+
+article#pagina section#top header nav ul a li aside.circle
+{
+    margin: 0 15px 0 0;
+    padding: 0;
+    float: left;
+}
+
+article#pagina section#top header nav section.logo{
+
+    background: url(../images/menu/logo1.png) no-repeat;
+    width: 116px;
+    height: 45px;
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 2px;
+}
+
+article#pagina section#top header section#scritte{
+    background: url(../images/menu/tweetbar_bg.png) no-repeat;
+    width: 622px;
+    height: 26px;
+    float: left;
+    padding: 4px 4px 0 35px;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+
+}
+
+
+article#pagina section#top header section#scritte marquee#tweet ul,
+article#pagina section#top header section#scritte marquee#tweet ul li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+article#pagina section#top header section#scritte marquee#tweet a,
+article#pagina section#top header section#scritte marquee#tweet ul a,
+article#pagina section#top header section#scritte marquee#tweet ul li a
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffcc1d;
+    text-decoration: none;
+}
+
+header section#online{
+
+    background: url(../images/menu/time_bg.png) no-repeat;
+    width: 327px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+
+
+}
+header section#online section.testo{
+    padding-top: 3px;
+    font-size: 13px;
+}
+
+
+
+/*FINE HEADER*/
+
+article#pag_fb{
+  
+    height: 34px;
+    width: 32px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+/*INIZIO BOX */
+
+article#pagina section#top article#box  section#top_box{
+    height: 35px;
+}
+
+article#pagina section#top article#box section#top_box section.left{
+    width: 14px;
+    height: 35px;
+    float: left;
+}
+
+article#pagina section#top article#box section#top_box section.centr{
+    height: 35px;
+    float: left;
+
+
+}
+
+article#pagina section#top article#box section#top_box section.right{
+
+    width: 14px;
+    height: 35px;
+    float: right;
+}
+
+article#pagina section#top article#box section#top_box section.centr section#titolo{
+    font: 14px 'Trebuchet MS';
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    margin: 0;
+    margin-left: -2px;
+    margin-top: 8px;
+    font-variant: small-caps;
+}
+
+
+article#pagina section#top article#box section#centro section.centr{
+    background: url("../images/box/cent_cent.png") repeat;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 6px 20px 6px 10px;
+    color: #777777;
+    overflow-wrap: break-word;
+    font-size: 14px;
+}
+
+
+article#pagina section#top article#box section#bottom_box{
+    height: 35px;
+}
+
+article#pagina section#top article#box section#bottom_box section.left{
+    width: 16px;
+    height: 35px;
+    float: left;
+}
+
+article#pagina section#top article#box section#bottom_box section.centr{
+    height: 35px;
+    float: left;
+
+}
+
+article#pagina section#top article#box section#bottom_box section.right{
+    width: 16px;
+    height: 35px;
+    float: right;
+}
+
+/*FINE BOX*/
+
+/*INIZIO LOGIN BOX*/
+
+article#pagina section#top article#login{
+    background: url(../images/subheader/login/login_bg.png) no-repeat;
+    width: 315px;
+    height: 149px;
+    float: right;
+    padding: 9px 0 0 13px;
+
+
+}
+
+article#pagina section#top article#login figure{
+    background: url(../images/subheader/login/out/unknown_user.png) no-repeat;
+    width: 33px;
+    height: 108px;
+    padding: 0;
+    float: left;
+    margin: 34px 0 0 10px
+}
+
+article#pagina section#top article.out{
+    width: 198px;
+    float: right;
+    padding-right: 8px;
+}
+
+article#pagina section#top  input[type='text'],
+article#pagina section#top  input[type='password']
+{
+    background: url(../images/subheader/login/out/giallo/input_bg.png) no-repeat;
+    width: 198px;
+    height: 26px;
+    padding: 0px 0 1px 0;
+    border: 0;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    outline: 0;
+    font-variant: small-caps;
+}
+
+article#pagina section#top  input[type='submit'].normal
+{
+    background: url(../images/input/giallo/button.png) top no-repeat;
+    width: 198px;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 4px;
+    color: white;
+    font: 20px 'Trebuchet MS';
+    font-variant: small-caps;
+}
+
+article#pagina section#top  input[type='submit'].normal:hover
+{
+    background: url(../images/input/giallo/button.png) bottom no-repeat;
+    cursor: pointer;
+}
+
+.register_bt{
+    background: url(../images/input/verde/button.png) top no-repeat;
+    width: 198px;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 65px;
+    margin-bottom: 4px;
+    color: white;
+    font: 20px 'Trebuchet MS';
+    font-variant: small-caps;
+}
+.register_bt:hover{
+    background: url(../images/input/verde/button.png) bottom no-repeat;
+    cursor: pointer;
+}
+
+
+/*FINE LOGIN BOX*/
+
+
+/*INIZIO BOX DATI*/
+
+article#pagina section#top article#dati{
+    background: url(../images/subheader/login/login_bg.png) no-repeat;
+    width: 315px;
+    height: 149px;
+    float: right;
+    padding: 9px 0 0 13px;
+
+
+}
+
+article#pagina section#top article#dati figure{
+    width: 33px;
+    height: 108px;
+    margin-left: -3px;
+    position: absolute;
+}
+
+
+article#pagina section#top article#dati  article.user_section
+{
+    width: 160px;
+    overflow: hidden;
+    margin: auto;
+    height: 26px;
+    text-align: center;
+    padding-left: 64px;
+}
+
+article#pagina section#top article#dati  article.user_section aside#username
+{
+    background: url(../images/subheader/login/in/giallo/name_bg.png) no-repeat;
+width: 160px;
+height: 26px;
+color: white;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+font-size: 16px;
+font-weight: bold;
+margin: 0 auto;
+padding-top: 2px;
+    }
+
+article#pagina section#top article#dati article.in {
+    width: 236px;
+    float: right;
+    padding: 6px 0 0 0;
+}
+
+article#pagina section#top article#dati article.in aside#mini_statics {
+    background: url(../images/subheader/login/in/mini_statics.png) no-repeat;
+    width: 238px;
+    height: 43px;
+    margin-left: -8px;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    padding: 11px 10px 0px 0px;
+    text-align: center;
+}
+
+
+article#pagina section#top article#dati article.in  aside#event {
+    background: url(../images/subheader/login/in/event_bg.png) no-repeat;
+    width: 230px;
+    height: 57px;
+    padding: 4px 0 0 8px;
+    margin: -8px 0 0 -8px;
+    color: white;
+    font-weight: bold;
+}
+
+article#pagina section#top article#dati article.in aside#event section.left
+{
+    width: 170px;
+    float: left;
+}
+
+article#pagina section#top article#dati article.in aside#event section.leftsmall
+{
+    font-size: 9px;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    float: left;
+}
+
+article#pagina section#top article#dati article.in aside#event section.leftbig
+{
+    width: 130px;
+    font-size: 11px;
+    color: #E69B11;
+    text-shadow: 0 1px 0 black;
+    float: left;
+    font-weight: bold;
+}
+
+article#pagina section#top article#dati article.in aside#event section.left aside#coins
+{
+    background: url(../images/subheader/login/in/coins.png) left 2px no-repeat;
+
+    float: left;
+    padding-left: 20px;
+    font-size: 11px;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    margin-top: 5px;
+}
+
+article#pagina section#top article#dati article.in aside#event section.left aside#vips
+{
+    background: url(../images/subheader/login/in/vips.png) left -1px no-repeat;
+    width: 20px;
+    height: 19px;
+    float: left;
+    padding-left: 24px;
+    font-size: 11px;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+article#pagina section#top article#dati article.in aside#event section.right aside#go
+{
+    background: url(../images/subheader/login/in/go.png) no-repeat;
+    width: 25px;
+    height: 26px;
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+article#pagina section#top article#dati article.in aside#event section.right
+{
+    width: 39px;
+    float: right;
+}
+
+article#pagina section#top article#dati article.in aside#event section.right aside#date
+{
+    width: 100px;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    float: right;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 11px;
+    padding: 5px 0 0 0;
+    text-align: right;
+}
+
+
+/*FINE BOX DATI*/
+
+
+
+/*INIZIO FB REGISTER*/
+
+.register_fb{
+    background: url(../images/input/blu/button.png) top no-repeat;
+    width: 198px;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    top: 63%;
+    font: 20px 'Trebuchet MS';
+    font-variant: small-caps;
+    position: relative;
+}
+.register_fb:hover{
+    background: url(../images/input/blu/button.png) bottom no-repeat;
+    cursor: pointer;
+}
+
+/*FINE FB REGISTER*/
+
+
+/*INIZIO NEWS*/
+
+div#slideshow {
+    width: 328px;
+    height: 88px;
+}
+
+div#slideshow div.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+div#slideshow div.current {
+    display: block;
+}
+
+div#slideshow section.bg{
+    height: 88px;
+    width: 324px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div#slideshow section.bg section.titolo{
+    text-align: left;
+    padding: 0px 20px 0px 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+div#slideshow section.bg section.testo{
+    text-align: left;
+    padding: 0px 20px 0px 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    overflow: hidden;
+    height: 60px;
+
+
+}
+
+
+/*FINE NEWS*/
+
+/*INIZIO FOOTER*/
+footer
+{
+    width: 1000px;
+    margin: auto;
+    height: 96px;
+    overflow: hidden;
+}
+
+footer section#header
+{
+    background: url(../images/footer_head.png) no-repeat;
+    width: 1000px;
+    height: 18px;
+    cursor: pointer;
+}
+
+footer section#content
+{
+    background: url(../images/footer_bg.png) repeat-y;
+    width: 960px;
+    color: white;
+
+    font: 14px 'Trebuchet MS';
+    padding: 0 20px 8px;
+    overflow: hidden;
+}
+
+footer section#content article.left
+{
+    width: 209px;
+    float: left;
+    overflow: hidden;
+}
+
+footer section#content article.left aside#copyright
+{
+    overflow: hidden;
+    height: 70px;
+}
+
+footer section#content article.left aside#copyright figure.flink
+{
+    background: url(../images/footer/flink_logo.png) no-repeat;
+    width: 165px;
+    height: 27px;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 40px;
+    font: 12px 'Trebuchet MS';
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+footer section#content article.left aside#copyright figure.basshunter
+{
+    background: url(../images/footer/basshunter_logo.png) no-repeat;
+    width: 158px;
+    height: 30px;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 40px;
+    font: 12px 'Trebuchet MS';
+    text-align: left;
+}
+
+footer section#content article.left aside#copyright figure a aside#facebook
+{
+    background: url(../images/footer/facebook_small.png) no-repeat;
+    width: 8px;
+    height: 18px;
+    float: left;
+    margin-right: 5px;
+}
+
+footer section#content article.left aside#copyright figure a aside#skype
+{
+    background: url(../images/footer/skype_small.png) no-repeat;
+    width: 15px;
+    height: 18px;
+    float: left;
+    margin-right: 5px;
+}
+
+footer section#content article.left aside#copyright figure a aside#twitter
+{
+    background: url(../images/footer/twitter_small.png) no-repeat;
+    width: 16px;
+    height: 15px;
+    float: left;
+}
+
+footer section#content article.middle
+{
+    width: 600px;
+    float: left;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font: 12px 'Trebuchet MS';
+
+}
+
+footer section#content article.middle a
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer section#content article.middle p
+{
+    margin: 10px 0 0 0;
+}
+
+footer section#content a article.right
+{
+    background: url(../images/footer/habbo_fansite.png) no-repeat;
+    width: 129px;
+    height: 70px;
+    float: right;
+}
+/*FINE FOOTER*/
+
+.errore{
+    background-color: #E69B11;
+    color: rgb(255, 255, 255);
+    clear: both;
+    margin: 10px 22px -10px 25px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*INIZIO BOX BACHECA */
+
+
+
+
+article#pagina section#top article#box div#testi section.mp
+{
+
+}
+
+article#pagina section#top article#box div#testi section.mp article#mpleft
+{
+    background: url(../images/mp/baseMessage.png) bottom no-repeat;
+    width: 66px;
+    height: 125px;
+}
+
+
+article#pagina section#top article#box div#testi section.mp.left article#mpleft { float: left; }
+article#pagina section#top article#box div#testi section.mp.right article#mpleft {
+
+    float: right;
+    margin-top: -5px;
+}
+
+article#pagina section#top article#box div#testi section.mp article#mpleft img { margin: -10px 0 0 0; }
+
+article#pagina section#top article#box div#testi section.mp article#mpright
+{
+    width: 591px;
+
+}
+
+article#pagina section#top article#box div#testi section.mp.left article#mpright {
+    float: left;
+    margin-top: -125px;
+    margin-left: 60px;
+}
+article#pagina section#top article#box div#testi section.mp.right article#mpright {
+    float: right;
+    margin-right: 60px;
+    margin-top: -120px;
+}
+
+article#pagina section#top article#box div#testi section.mp article#mpright aside.mptop
+{
+    width: 539px;
+    height: 34px;
+    color: #ffffff;
+}
+
+article#pagina section#top article#box div#testi section.mp.left article#mpright aside.mptop { background: url(../images/mp/giallo/topMessageleft.png) no-repeat; padding: 12px 20px 0 32px; }
+article#pagina section#top article#box div#testi section.mp.right article#mpright aside.mptop { background: url(../images/mp/giallo/topMessageRight.png) no-repeat; padding: 12px 32px 0 20px; }
+
+article#pagina section#top article#box div#testi section.mp article#mpright aside.mpmid
+{
+    background: url(../images/mp/bgMessage.png) 17px repeat-y;
+    word-wrap: break-word;
+}
+
+article#pagina section#top article#box div#testi section.mp.left article#mpright aside.mpmid { background: url(../images/mp/bgMessage.png) 17px repeat-y; padding: 0 27px; width: 537px; word-wrap: break-word; }
+article#pagina section#top article#box div#testi section.mp.right article#mpright aside.mpmid { background: url(../images/mp/bgMessage.png) 2px repeat-y; padding: 0 14px; width: 550px; word-wrap: break-word; }
+
+article#pagina section#top article#box div#testi section.mp article#mpright aside.mpfooter
+{
+    background: url(../images/mp/footerMessage.png) 15px no-repeat;
+    width: 591px;
+    height: 14px;
+}
+
+article#pagina section#top article#box div#testi section.mp.left article#mpright aside.mpfooter { background: url(../images/mp/footerMessage.png) 15px repeat-y; }
+article#pagina section#top article#box div#testi section.mp.right article#mpright aside.mpfooter { background: url(../images/mp/footerMessage.png) left repeat-y; }
+
+
+
+
+/*FINE BOX BACHECA */
+
+/*INIZIO BOX COMMENTI */
+
+article#pagina section#top article#box section#commenti{
+    height: 110px;
+    width: 270px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+article#pagina section#top article#box section#commenti_input{
+    height: 36px;
+    width: 198px;
+    margin: auto;
+    margin-top: 24px;
+}
+
+article#pagina section#top article#box section#commenti textarea{
+    width: 260px;
+    height: 100px;
+    padding: 3px;
+    resize: none;
+
+}
+
+textarea{
+
+    border: 2px solid #E69B11;
+    border-radius: 4px;
+}
+
+article#pagina section#top article#box div#frase{
+    margin-top: 20px;
+
+}
+
+
+/*FINE BOX COMMENTI */
+
+/*INIZIO BOX HABBOID */
+
+
+
+article#pagina section#top article#box div#personaggi section#left
+{
+    width: 270px;
+    border-bottom: 1px solid #E69B11
+}
+article#pagina section#top article#box div#personaggi section#left article.data
+{
+    margin-top: -25px;
+    margin-left: 40px;
+}
+article#pagina section#top article#box div#personaggi section#left article.nome
+{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+article#pagina section#top article#box div#personaggi section#left article.gioca
+{
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    color: rgb(11, 221, 11);
+}
+
+article#pagina section#top article#box div#personaggi section#left article.elimina
+{
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    color: red;
+}
+
+article#pagina section#top article#box div#personaggi section#left article.look
+{
+    margin-top: -30px;
+}
+
+
+article#pagina section#top article#box div#personaggi section#right
+{
+    width: 270px;
+    border-bottom: 1px solid #E69B11;
+}
+article#pagina section#top article#box div#personaggi section#right article.data
+{
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 32px;
+}
+article#pagina section#top article#box div#personaggi section#right article.nome
+{
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 32px;
+}
+
+article#pagina section#top article#box div#personaggi section#right article.gioca
+{
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    color: rgb(11, 221, 11);
+}
+
+article#pagina section#top article#box div#personaggi section#right article.elimina
+{
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    color: red;
+}
+
+article#pagina section#top article#box div#personaggi section#right article.look
+{
+    margin-top: -30px;
+    float: right;
+}
+
+
+
+/*FINE BOX HABBOID */
+

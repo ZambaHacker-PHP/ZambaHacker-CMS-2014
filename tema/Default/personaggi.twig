@@ -1,0 +1,20 @@
+{% for top in home.top %}
+<section id="left" style="
+        width: 296px;
+        padding-bottom: 6px;">
+       
+        <article class="nome">
+        <a href="home.php?usr={{ top.username }}" style="text-decoration:none;color: #777777;">{{ top.username }}</a><article class="gioca">
+        {{ top.activity_points }} smeraldi
+        </article>    
+        
+        </article>
+       
+         <a href="home.php?usr={{ top.username }}" style="text-decoration:none;color: #777777;"><article class="look">
+        <img src="http://www.habbo.it/habbo-imaging/avatarimage?figure={{ top.look }}&amp;direction=3&amp;head_direction=3&amp;gesture=sml&amp;action=wav&amp;size=s">
+        </article></a>
+         <a href="home.php?usr={{ top.username }}" style="text-decoration:none;color: #777777;"><article class="data">
+        Ultima visita: {{ top.ultima_visita }}
+        </article></a>
+        </section>
+{%endfor%}

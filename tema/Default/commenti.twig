@@ -1,0 +1,24 @@
+         
+                    {% for commento in home.commenti %}
+                    
+                        <section class="{% if commento.user_name == home.utente.username %}mp right{%else%}mp left{%endif%}"><article id="mpleft"> <a href="home.php?usr={{ commento.user_name }}" style="text-decoration:none;color: #FFFFFF;"><img src="http://www.habbo.it/habbo-imaging/avatarimage?figure={{ commento.look }}&amp;direction=3&amp;head_direction=3&amp;gesture=sml&amp;action=wav&amp;size="></a></article>
+                        <article id="mpright">
+                        <aside class="mptop"><div style="overflow: hidden;">
+                        <a href="home.php?usr={{ commento.user_name }}" style="text-decoration:none;color: #FFFFFF;"><span style="float: left;">
+                        <b>{{ commento.user_name }}</b> 
+                        <b>scrive:</b> 
+                		</span></a>
+                        <span style="float: right;"> <a href="home.php?usr={{ commento.user_name }}" style="text-decoration:none;color: #FFFFFF;">{{ commento.data }}</a> {% if (home.utente.username == commento.nomeprofilo) or (home.utente.username ==  commento.user_name) or (home.permessi.commenti == 1) %} &#183; <a href="javascript:elimina_comm({{ commento.id }})"><img src="{{ root }}/images/X.gif"/></a>{% endif %}		</span>
+                		</div></aside>
+                        <aside class="mpmid">
+                        {{ commento.commento|raw|nl2br }}
+                        </aside>
+                        <aside class="mpfooter"></aside>
+                        </article>
+                        </section>
+                        
+                        {%else%}
+                        
+                        <center>Non ci sono commenti in questa bacheca</center>
+        
+                     {% endfor %}

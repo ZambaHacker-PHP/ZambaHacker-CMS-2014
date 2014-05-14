@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style>
+<style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+<style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}</style>
+
+    <meta charset="utf-8"/>
+    <title>{{ titolo }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A complete admin panel theme"/>
+    <meta name="author" content="theemio"/>
+
+    <!-- styles -->
+
+    <link href="tema/admin/css/utopia-white.css?v19" rel="stylesheet"/>
+    <link href="tema/admin/css/utopia-responsive.css" rel="stylesheet"/>
+    <link href="tema/admin/css/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/admin_files/weather.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/css/gallery/modal.css" rel="stylesheet"/>
+    <link href="tema/admin/admin_files/validationEngine.jquery.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/admin_files/chosen.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/css/ie.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="tema/admin/admin_files/jquery.min.js"></script>
+    <script type="text/javascript" src="tema/admin/admin_files/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        if($.cookie("css")) {
+            $('link[href*="utopia-white.css"]').attr("href",$.cookie("css"));
+            $('link[href*="utopia-dark.css"]').attr("href",$.cookie("css"));
+            $('link[href*="utopia-wooden.css"]').attr("href",$.cookie("css"));
+        }
+        $(document).ready(function() {
+            $(".theme-changer a").live('click', function() {
+                $('link[href*="utopia-white.css"]').attr("href",$(this).attr('rel'));
+                $('link[href*="utopia-dark.css"]').attr("href",$(this).attr('rel'));
+                $('link[href*="utopia-wooden.css"]').attr("href",$(this).attr('rel'));
+                $.cookie("css",$(this).attr('rel'), {expires: 365, path: '/'});
+                $('.user-info').removeClass('user-active');
+                $('.user-dropbox').hide();
+            });
+        });
+    </script>
+
+    <!--[if IE 8]>
+    <link href="css/ie8.css" rel="stylesheet">
+    <![endif]-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+
+<body>
+
+<div class="container-fluid">
+
+    <!-- Header starts -->
+    <div class="row-fluid">
+        <div class="span12">
+
+        {% include 'header.twig' %}
+
+            <!-- End header -->
+
+        </div>
+
+    </div>
+
+    <!-- Header ends -->
+
+    <div class="row-fluid">
+
+        <!-- Sidebar statrt -->
+        <div class="span2 sidebar-container">
+
+            <div class="sidebar">
+
+                <div class="navbar sidebar-toggle">
+                    <div class="container">
+
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                {% include 'menu.twig' %}
+
+            </div>
+        </div>
+
+        <!-- Sidebar end -->
+
+        <!-- Body start -->
+            <!-- Body start -->
+        <div class="span10 body-container">
+
+            
+<div class="row-fluid">
+                <div class="span12">
+                    <section class="utopia-widget">
+                        <div class="utopia-widget-title">
+                            <img src="tema/admin/img/icons/window.png" class="utopia-widget-icon">
+                            <span>Badge Utente</span>
+                        </div>
+
+                        <div class="utopia-widget-content utopia-form-freeSpace ">
+                        <div id="centro">
+                        <p style="margin-bottom: 60px;"><input class="span5" id="nome" type="text" placeholder="Nome utente"/>
+                        <button class="btn btn-large span5" style="margin-left: 0px;" onclick="javascript:badgecerca();">Cerca</button></p>
+                     <div id="msg_cerca" class="alert alert-error" style="display: none;">
+                  
+                    </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+     
+            {%if hk.user.NUM != 0 %}
+            <div class="row-fluid">
+
+                <div class="span12">
+                    <section class="utopia-widget">
+                        <div class="utopia-widget-title">
+                            <img src="tema/admin/img/icons/window.png" class="utopia-widget-icon">
+                            <span>Badge di {{ hk.user.name }}</span>
+                        </div>
+
+                        <div class="utopia-widget-content">
+
+                            <table class="table datatable table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>ID utente</th>
+                                    <th>Badge</th>
+                                    <th>Badge Slot</th>
+                                    <th>Immagine</th>
+                                  
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                {% for badge in hk.badge %}
+                                
+                                {% if badge.trow is odd %}
+                                <tr class="odd">
+                                   
+                                {%else%}
+                                <tr class="even">
+    
+                                {%endif%}
+                                
+                                 <td>{{ badge.user_id }}</td>
+                                    <td>{{ badge.badge_id }}</td>
+                                    <td>{{ badge.badge_slot }}</td>
+                                    <td><center><img src="http://dcr.jabboitalia.com/dcr/c_images/album1584/{{ badge.badge_id  }}.gif"></center></td>
+                            
+                                    
+                                </tr>
+                                
+                                {%endfor%}
+                                
+                                </tbody>
+
+                                <tfoot>
+                                <tr>
+                                    <th>ID utente</th>
+                                    <th>Badge</th>
+
+                                    <th>Badge Slot</th>
+                                    <th>Immagine</th>
+                                
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+   {%endif%}
+
+        </div><!-- Body end -->
+        <!-- Body end -->
+        
+        {% include 'footer.twig' %}
+
+    </div>
+
+    <!-- Maincontent end -->
+
+</div> <!-- end of container -->
+
+<!-- javascript placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="tema/admin/admin_files/utopia.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.datatable.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/tables.js"></script>
+
+<script type="text/javascript" src="tema/admin/admin_files/header.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/sidebar.js"></script>
+
+               <script type="text/javascript">
+            (function() {
+                var asjs = document.createElement('script');
+                asjs.type = 'text/javascript';
+                asjs.async = true;
+                asjs.src ='../js/admin/chatcerca.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(asjs);
+            }());
+        </script>
