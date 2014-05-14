@@ -31,7 +31,7 @@ class mysql
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
 
-        $col = 'mysql:host=' . config::host . ';dbname=' . config::db;
+        $col = 'mysql:host=' . config::host . ';dbname=' . config::db.';port='. config::port;
 
         try {
 
