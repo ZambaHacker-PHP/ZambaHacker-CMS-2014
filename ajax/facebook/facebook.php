@@ -14,7 +14,7 @@ if($_SERVER['SERVER_NAME'] != $config->url_sito){
 
 }else{
 
-    $login = new login($mysql);
+    $login = new login($mysql,$config->colore);
     $login->facebook($config->appid,$config->secret);
     $mysql->close();
 

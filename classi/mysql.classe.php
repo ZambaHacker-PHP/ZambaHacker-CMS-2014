@@ -300,6 +300,51 @@ class mysql
         
     }
     
+    public function aggiornamenti(){
+        
+        if(file_exists("../info.xml")){
+            
+        $xml = New DOMDocument();
+        $get_xml = file_get_contents("../info.xml");
+        $xml->loadXML($get_xml);
+        
+        $xml_git = New DOMDocument();
+        $get_xml_git = file_get_contents("https://raw.githubusercontent.com/ZambaHacker-PHP/ZambaHacker-CMS-2014/master/info.xml");
+        $xml_git->loadXML($get_xml_git);
+        
+        $xarray = array();
+        $xarraygit = array();
+        
+        $x = $xml->documentElement;
+        $xgit = $xml_git->documentElement;
+        
+        foreach ($x->childNodes AS $item) {
+    
+            $xarray[$item->nodeName] = $item->nodeValue;
+
+        }
+        
+        foreach ($xgit->childNodes AS $item) {
+    
+            $xarraygit[$item->nodeName] = $item->nodeValue;
+
+        }
+        
+        if($xarraygit['versione'] > $xarray['versione']){
+            
+               return $xarraygit;
+        
+        }else{
+            
+            return array("versione" => "nessuna"); 
+            
+        }
+        
+        }
+        
+        
+    }
+    
     public function close()
     {
         $this->con = null;

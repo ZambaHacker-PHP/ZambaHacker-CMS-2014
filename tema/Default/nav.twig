@@ -23,9 +23,16 @@
                    
             </a>
 
-            <aside class="circle">●</aside>
+        <aside class="circle">●</aside>
             <a href="/impostazioni.php">
-                <li data-subnav="team">
+                   {% if pagina == 'impostazioni'%}
+                    <li data-subnav="impo" style="background: url({{ root }}/images/menu/{{ impostazioni.colore }}/menu_arrow.png) center 44px no-repeat;" >
+                    
+                    {%else%}
+                    
+                    <li data-subnav="impo">
+                    
+                    {%endif%}
                     Impostazioni</li>
             </a>
             <aside class="circle">●</aside>

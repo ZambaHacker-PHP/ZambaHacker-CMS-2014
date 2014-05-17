@@ -11,12 +11,13 @@ class login
 {
 
     private $mysql;
+    private $colore;
 
-    public function __construct($mysql)
+    public function __construct($mysql,$colore)
     {
 
         $this->mysql = $mysql;
-
+        $this->colore = $colore;
     }
 
     public function accesso($username,$password)
@@ -218,7 +219,7 @@ class login
 
         $query = $this->mysql->esegui(array
 
-            ("QUERY" => "INSERT INTO users (username, password, mail, rank, credits, look, gender, ip_reg, habboid, account_created, ultima_visita, motto, pass_crypt, facebook_id,cod_att) VALUES (:username, :password, :email, '1','1000000', 'ch-3111-63-62.hd-3102-1.hr-3163-39.lg-285-77.sh-305-78', 'M', :ip, :habboid, :datacr, :ultimavisita, :motto, :passcrypt, :fbid,:cod_att)",
+            ("QUERY" => "INSERT INTO users (username, password, mail, rank, credits, look, gender, ip_reg, habboid, account_created, ultima_visita, motto, pass_crypt, facebook_id, colore) VALUES (:username, :password, :email, '1','1000000', 'ch-3111-63-62.hd-3102-1.hr-3163-39.lg-285-77.sh-305-78', 'M', :ip, :habboid, :datacr, :ultimavisita, :motto, :pass_crypt, :fb, :colore)",
             ":username" => $username,
             ":password" => $this->mysql->crypt_pass($password),
             ":email"    => $email,
@@ -228,7 +229,8 @@ class login
             ":ultimavisita" => $this->mysql->data(),
             ":motto"    => 'Benvenuto in hotel',
             ":pass_crypt" => $this->mysql->crypt($password,'password_crypt'),
-            ":fbid"     => $fbid,
+            ":colore" => $this->colore,
+            ":fb"     => $fbid
             )
 
         );

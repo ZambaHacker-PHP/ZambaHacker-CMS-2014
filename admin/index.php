@@ -26,6 +26,7 @@ $data['hk']['stanze'] = $stanze['NUM'];
 $data['pagina'] = 'dash';
 $online = $mysql->esegui(array("QUERY" => 'SELECT users_online FROM server_status LIMIT 1'));
 $data['online'] = $online['users_online'];
+$data['aggiornamento'] = $mysql->aggiornamenti();
 
 $template->load_template($data);
 $mysql->close();
