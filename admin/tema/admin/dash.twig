@@ -164,8 +164,8 @@
                                 <p style="color:red;">Trovato un aggiornamento del cms ZambaHacker 2014</p>
                                 <p style="color:red;">Data: {{ aggiornamento.data }}</p>
                                 <p style="color:red;">Versione: {{ aggiornamento.versione }}</p>
-                                <p style="color:red;">File Aggiornati: {{ aggiornamento.file }}</p>
-                                
+                                <p style="color:red;">File Aggiornati: {{ aggiornamento.file|raw }}</p>
+                                <p>Per scaricare l'aggiornamento scarica i file aggiornati da <a href="https://github.com/ZambaHacker-PHP/ZambaHacker-CMS-2014">ZambaHacker CMS 2014</a></p>
                             {% else %}
                             
                                 <p style="color:rgb(44, 219, 44);">Nessun aggiornamento del cms disponibile</p>
