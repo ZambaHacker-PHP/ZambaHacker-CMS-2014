@@ -4,11 +4,10 @@
 <data>18/05/2014 12:47</data>
 <file>
 <lineup>
-Modificato file classi/admin.classe.php
-Modificato file classi/mysql.classe.php
+Aggiunta cartella admin/tema/admin/editor
 Modificato file admin/tema/admin/crea_news.twig
 Modificato file admin/crea_news.php
-Aggiunto file js/news.js
+
 </lineup>
 </file>
 </note>

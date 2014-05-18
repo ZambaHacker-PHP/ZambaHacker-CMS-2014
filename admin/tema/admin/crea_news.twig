@@ -90,9 +90,67 @@
         <!-- Body start -->
             <div class="span10 body-container">
 
+               
+
                 
 
-                    <section id="formElement" class="utopia-widget utopia-form-box section">
+                    <div class="row-fluid">
+                <div class="span12">
+                    <section class="utopia-widget">
+                        <div class="utopia-widget-title">
+                            <img src="tema/admin/img/icons/window.png" class="utopia-widget-icon">
+                            <span>News Completa</span>
+                        </div>
+
+                        <div class="utopia-widget-content utopia-form-freeSpace ">
+                   	<script src="tema/admin/editor/ckeditor.js"></script>
+	<script src="tema/admin/editor/adapters/jquery.js"></script>
+
+
+	<script>
+
+		CKEDITOR.disableAutoInline = true;
+
+		$( document ).ready( function() {
+			$( '#long' ).ckeditor(); // Use CKEDITOR.replace() if element is <textarea>.
+			$( '#editable' ).ckeditor(); // Use CKEDITOR.inline().
+		} );
+
+	</script>
+
+
+
+
+	
+		
+
+	
+
+		<textarea cols="80" id="long" name="long" rows="10"></textarea>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+                        
+            
+                        <script type="text/javascript">
+            (function() {
+                var asjs = document.createElement('script');
+                asjs.type = 'text/javascript';
+                asjs.async = true;
+                asjs.src ='../js/admin/cerca.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(asjs);
+            }());
+        </script>
+
+
+        
+
+                    
+            
+            <section id="formElement" class="utopia-widget utopia-form-box section">
     <div class="utopia-widget-title">
 <img src="tema/admin/img/icons/window.png" class="utopia-widget-icon">
         <span>Crea una News</span>
@@ -118,13 +176,7 @@
                                <textarea id="short" style="height: 76px;" class="span10"></textarea>
                         </div> </div>
                         
-                          <div class="control-group1" style="margin-bottom: 18px;">
-                            <label class="control-label" for="input01">News completa:</label>
-
-                            <div class="controls">
-                              <textarea id="long" style="height: 294px;" class="span10"></textarea>
-                            </div>
-                        </div>
+                  
                         
                         
                 
@@ -177,8 +229,6 @@
                         </div>
                          <div id="msg_s" class="alert alert-success" style="display: none;">  </div>
 </section>
-            
-            
             
                         <script type="text/javascript">
             (function() {
