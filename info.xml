@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
-<versione>1.1</versione>
+<versione>1.0</versione>
 <data>18/05/2014 02:17</data>
 <file>
-Aggiunto File info.xml <br>
-Modificato File mysql.classe.php <br>
-Modificato File admin/index.php <br>
-Modificato File admin/tema/admin/dash.twig <br>
-
+<lineup>
+Aggiunto File info.xml
+Modificato File mysql.classe.php 
+Modificato File admin/index.php
+Modificato File admin/tema/admin/dash.twig 
+</lineup>
 </file>
 </note>
