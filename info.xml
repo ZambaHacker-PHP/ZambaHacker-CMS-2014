@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
 <versione>1.0</versione>
-<dataa>18/05/2014 01:20</dataa>
-<file>1.0</file>
+<data>18/05/2014 01:20</data>
+<file>
+Aggiunto File info.xml
+Modificato File mysql.classe.php
+Modificato File admin/index.php
+Modificato File admin/tema/admin/dash.twig
+</file>
 </note>

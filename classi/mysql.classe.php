@@ -324,9 +324,9 @@ class mysql
 
         }
         
-        foreach ($xgit->childNodes AS $item) {
+        foreach ($xgit->childNodes AS $item1) {
     
-            $xarraygit[$item->nodeName] = $item->nodeValue;
+            $xarraygit[$item1->nodeName] = $item1->nodeValue;
 
         }
         
@@ -339,6 +339,7 @@ class mysql
             return array("versione" => "nessuna"); 
             
         }
+        
         
         }
         
