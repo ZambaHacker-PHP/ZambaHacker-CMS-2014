@@ -219,12 +219,22 @@ class admin
         
         if($nome != ''){
             
-            $user = $this->mysql->esegui(array("QUERY" => 'SELECT * FROM users WHERE username = :username LIMIT 1',':username'=>$nome),'fetch',true);
+            $user = $this->mysql->esegui(array("QUERY" => 'SELECT * FROM users WHERE username = :username LIMIT 1',':username' =>$nome),'fetch',true);
             
             if($user['NUM'] != 0){
                 
                 $user1 = $this->mysql->esegui(array("QUERY" => 'SELECT * FROM user_stats WHERE id = :id LIMIT 1',':id'=>$user['id']),'fetch',true);
-                $marge = array_merge($user,$user1);
+                
+                if($user1['NUM'] != 0){
+                    
+                    $marge = array_merge($user,$user1);
+                    
+                }else{
+                    
+                    $marge = $user;
+                    
+                }
+                
                 return $marge;
                 
             }else{

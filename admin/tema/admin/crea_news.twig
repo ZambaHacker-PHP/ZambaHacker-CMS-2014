@@ -12,32 +12,26 @@
 
     <!-- styles -->
 
-    <link href="tema/admin/css/utopia-white.css?v19" rel="stylesheet"/>
-    <link href="tema/admin/css/utopia-responsive.css" rel="stylesheet"/>
+    <link href="tema/admin/css/utopia-white.css" rel="stylesheet">
+    <link href="tema/admin/css/utopia-responsive.css" rel="stylesheet">
+    <link href="tema/admin/css/ie.css" rel="stylesheet">
+    <link href="tema/admin/css/jquery.cleditor.css" rel="stylesheet" type="text/css" />
+    <link href="tema/admin/css/alerts.css" type="text/css" rel="stylesheet">
+    <link href="tema/admin/css/colorpicker.css" rel="stylesheet" type="text/css"/>
+    <link href="color/bundle.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/css/chosen.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="tema/admin/css/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
-    <link href="tema/admin/admin_files/weather.css" rel="stylesheet" type="text/css"/>
-    <link href="tema/admin/css/gallery/modal.css" rel="stylesheet"/>
-    <link href="tema/admin/admin_files/validationEngine.jquery.css" rel="stylesheet" type="text/css"/>
-    <link href="tema/admin/admin_files/chosen.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="tema/admin/css/ie.css" rel="stylesheet"/>
+    <link href="tema/admin/css/datepicker.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/css/utopia-growl.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/css/page-scrller.css" rel="stylesheet" type="text/css"/>
+    <link href="tema/admin/tema/admin/css/ie.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="tema/admin/admin_files/jquery.min.js"></script>
     <script type="text/javascript" src="tema/admin/admin_files/jquery.cookie.js"></script>
-       <script type="text/javascript" src="tema/admin/scripts/jHtmlArea-0.7.5.js"></script>
-    <link rel="Stylesheet" type="text/css" href="tema/admin/style/jHtmlArea.css" />
-        <style type="text/css">
-        /* body { background: #ccc;} */
-        div.jHtmlArea .ToolBar ul li a.custom_disk_button 
-        {
-            background: url(images/disk.png) no-repeat;
-            background-position: 0 0;
-        }
-        
-        div.jHtmlArea { border: solid 1px #ccc; }
-    </style>
+
 
     <!--[if IE 8]>
-    <link href="css/ie8.css" rel="stylesheet">
+    <link href="tema/admin/css/ie8.css" rel="stylesheet">
     <![endif]-->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -98,51 +92,42 @@
 
         <!-- Sidebar end -->
 
-     <div class="span10">
+        <!-- Body start -->
+            <div class="span10 body-container">
 
-    <textarea id="test" cols="50" rows="15"><p><h3>Test H3</h3>This is some sample text to test out the <b>WYSIWYG Control</b>.</p></textarea>
-    <script type="text/javascript">
-        // You can do this to perform a global override of any of the "default" options
-        // jHtmlArea.fn.defaultOptions.css = "jHtmlArea.Editor.css";
+                
+<section id="texEditor" class="utopia-widget section">
+    <div class="utopia-widget-title">
+        <img src="img/icons2/pen.png" class="utopia-widget-icon">
+        <span>text editor:</span>
+    </div>
 
-        $(function() {
-        /*
-            $("#test").htmlarea();
-
-            $("#Textarea1").htmlarea({
-            toolbar: ["html","bold", "italic", "underline", "|", "h1", "h2", "h3", "h4", "h5", "h6", "|", "link", "unlink", "|",
-                    {
-                        css: "custom_disk_button", // This is how to add a completely custom Toolbar Button
-                        text: "Save",
-                        action: function(btn) {
-                            // 'this' = jHtmlArea object
-                            // 'btn' = jQuery object that represents the <A> "anchor" tag for the Toolbar Button
-                            alert('SAVE!\n\n' + this.toHtmlString());
-                        }
-                    }
+    <div class="row-fluid">
+        <div class="utopia-widget-content-nopadding">
+            <div class="span12 text-editor">
+                <div class="cleditorMain" style="height: 250px;"><div class="cleditorToolbar" style="height: 27px;"><div class="cleditorGroup"><div class="cleditorButton" title="Bold"></div><div class="cleditorButton" title="Italic" style="background-position: -24px 50%;"></div><div class="cleditorButton" title="Underline" style="background-position: -48px 50%;"></div><div class="cleditorButton" title="Strikethrough" style="background-position: -72px 50%;"></div><div class="cleditorButton" title="Subscript" style="background-position: -96px 50%;"></div><div class="cleditorButton" title="Superscript" style="background-position: -120px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Font" style="background-position: -144px 50%;"></div><div class="cleditorButton" title="Font Size" style="background-position: -168px 50%;"></div><div class="cleditorButton" title="Style" style="background-color: transparent; background-position: -192px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Font Color" style="background-color: transparent; background-position: -216px 50%;"></div><div class="cleditorButton" title="Text Highlight Color" style="background-color: transparent; background-position: -240px 50%;"></div><div class="cleditorButton cleditorDisabled" title="Remove Formatting" disabled="disabled" style="background-color: transparent; background-position: -264px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Bullets" style="background-color: transparent; background-position: -288px 50%;"></div><div class="cleditorButton" title="Numbering" style="background-color: transparent; background-position: -312px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Outdent" style="background-color: transparent; background-position: -336px 50%;"></div><div class="cleditorButton" title="Indent" style="background-position: -360px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Align Text Left" style="background-color: transparent; background-position: -384px 50%;"></div><div class="cleditorButton" title="Center" style="background-color: transparent; background-position: -408px 50%;"></div><div class="cleditorButton" title="Align Text Right" style="background-color: transparent; background-position: -432px 50%;"></div><div class="cleditorButton" title="Justify" style="background-color: transparent; background-position: -456px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton cleditorDisabled" title="Undo" disabled="disabled" style="background-position: -480px 50%;"></div><div class="cleditorButton cleditorDisabled" title="Redo" disabled="disabled" style="background-color: transparent; background-position: -504px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Insert Horizontal Rule" style="background-color: transparent; background-position: -528px 50%;"></div><div class="cleditorButton" title="Insert Image" style="background-color: transparent; background-position: -552px 50%;"></div><div class="cleditorButton" title="Insert Hyperlink" style="background-color: transparent; background-position: -576px 50%;"></div><div class="cleditorButton cleditorDisabled" title="Remove Hyperlink" disabled="disabled" style="background-color: transparent; background-position: -600px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton cleditorDisabled" title="Cut" disabled="disabled" style="background-color: transparent; background-position: -624px 50%;"></div><div class="cleditorButton cleditorDisabled" title="Copy" disabled="disabled" style="background-color: transparent; background-position: -648px 50%;"></div><div class="cleditorButton cleditorDisabled" title="Paste" disabled="disabled" style="background-color: transparent; background-position: -672px 50%;"></div><div class="cleditorButton" title="Paste as Text" style="background-position: -696px 50%;"></div><div class="cleditorDivider"></div></div><div class="cleditorGroup"><div class="cleditorButton" title="Print" style="background-color: transparent; background-position: -720px 50%;"></div><div class="cleditorButton" title="Show Source" style="background-color: transparent; background-position: -744px 50%;"></div></div></div><textarea id="input" name="input" style="display: none; width: 978.1818182468414px; height: 223px;"></textarea><iframe frameborder="0" src="javascript:true;" style="width: 978.1818182468414px; height: 223px;"></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
                     
-                ], // Overrides/Specifies the Toolbar buttons to show
-                css: "jHtmlArea.Editor.css", // Specify a specific CSS file to use for the Editor
-                loaded: function() { // Do something once the editor has finished loading
-                    //// 'this' is equal to the jHtmlArea object
-                    //alert("jHtmlArea has loaded!");
-                    //this.showHTMLView(); // show the HTML view once the editor has finished loading
-                }
-            });
-        */
-            $("textarea").htmlarea(); // Initialize jHtmlArea's with all default values
-        });
-    </script>
+            
+     
+            
+                        <script type="text/javascript">
+            (function() {
+                var asjs = document.createElement('script');
+                asjs.type = 'text/javascript';
+                asjs.async = true;
+                asjs.src ='../js/admin/cerca.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(asjs);
+            }());
+        </script>
 
 
-
-
-
-
-
-
-
-</div><!-- Body end -->
+                
+            </div>
+        <!-- Body end -->
         
         {% include 'footer.twig' %}
 
@@ -152,9 +137,26 @@
 
 </div> <!-- end of container -->
 
+<!-- javascript placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="tema/admin/admin_files/utopia.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.hoverIntent.min.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="tema/admin/admin_files/jquery.datatable.js"></script>
 <script type="text/javascript" src="tema/admin/admin_files/tables.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.sparkline.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.vticker-min.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/datepicker.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/load-image.min.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/image-gallery.min.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/jquery.simpleWeather.js"></script>
+<script src="tema/admin/admin_files/jquery.validationEngine.js" type="text/javascript"></script>
+<script type="text/javascript" src="tema/admin/admin_files/maskedinput.js"></script>
+<script type="text/javascript" src="tema/admin/admin_files/chosen.jquery.js"></script>
 
 <script type="text/javascript" src="tema/admin/admin_files/header.js"></script>
 <script type="text/javascript" src="tema/admin/admin_files/sidebar.js"></script>
+
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

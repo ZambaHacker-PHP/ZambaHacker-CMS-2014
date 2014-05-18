@@ -19,8 +19,8 @@ class config
     #--------- CONFIGURAZIONE ERRORI--#
     const mysql_errori = 1; #errori mysql
     const mysql_log_errori = 1; #log degli errori
-    const log_query = 0; #log_query si consiglia disabilitarle
-    const php_errori = 0; #errori php
+    const log_query = 1; #log_query si consiglia disabilitarle
+    const php_errori = 1; #errori php
     const log_mus = 0; #log comandi mus 
     #---------------------------------#
 
