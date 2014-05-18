@@ -344,6 +344,32 @@ class admin
         }
         
     }
+    
+    public function crea_news($titolo,$short,$long,$img,$autore){
+        
+        if($titolo != '' || $short != '' || $long != '' ||$img != '' || $autore != ''){
+            
+           $this->mysql->esegui(array(
+           
+           "QUERY" => "INSERT INTO cms_news (title,shortstory,longstory,image,attivo,data,author) VALUES (:title,:shorts,:longs,:img,:attivo,:data,:autore)",
+           ":title" => $titolo,
+           ":shorts" => $short,
+           ":longs" => $long,
+           ":img" => $img,
+           ":data" => $this->mysql->data(),
+           ":autore" => $autore,
+           ":attivo" => 1
+           
+           
+           )); 
+           
+           $this->mysql->esegui(array("QUERY" => 'INSERT INTO `cms_log` (`username`, `azione`, `data`, `ip`) VALUES (:username,:azione,:data,:ip)',':username' => $this->utente['username'], ':azione' => 'Crea news '.$titolo,':ip' => $this->mysql->get_ip(),':data' => $this->mysql->data()));
+          
+            echo 'News Creata con successo';
+            
+        }
+        
+    }
       
 
 }

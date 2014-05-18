@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
-<versione>1.1</versione>
-<data>18/05/2014 02:17</data>
+<versione>1.2</versione>
+<data>18/05/2014 12:47</data>
 <file>
 <lineup>
-Aggiunto File info.xml
-Modificato File mysql.classe.php 
-Modificato File admin/index.php
-Modificato File admin/tema/admin/dash.twig 
+Modificato file classi/admin.classe.php
+Modificato file classi/mysql.classe.php
+Modificato file admin/tema/admin/crea_news.twig
+Modificato file admin/crea_news.php
+Aggiunto file js/news.js
 </lineup>
 </file>
 </note>

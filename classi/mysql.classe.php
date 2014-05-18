@@ -174,7 +174,7 @@ class mysql
     {
 
 
-       
+   
 
         return $str;
     }
